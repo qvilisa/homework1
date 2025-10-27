@@ -1,0 +1,51 @@
+﻿// See https://aka.ms/new-console-template for more information
+
+string str1 = "--Улучшенный калькулятор--";
+Console.WriteLine(str1);
+
+string str2 = "Введите первое число: ";
+Console.WriteLine(str2);
+double db1 = Double.Parse(Console.ReadLine());
+
+string str3 = "Введите второе число: ";
+Console.WriteLine(str3);
+double db2 = Double.Parse(Console.ReadLine());
+
+string str4 = "Введите символ операции: ";
+Console.WriteLine(str4);
+string str5 = Console.ReadLine();
+
+
+if (db2 == 0 && str5 =="/")
+{
+    Console.WriteLine("Ошибка. На 0 делить нельзя");
+}
+
+else if (str5 == "-")
+{
+    Console.WriteLine("Результат: ");
+    Console.Write(db1 - db2);
+}
+
+else if (str5 == "+")
+{
+    Console.WriteLine("Результат: ");
+    Console.Write(db1 + db2);
+}
+
+else if (str5 == "*")
+{
+    Console.WriteLine("Результат: ");
+    Console.Write(db1 * db2);
+}
+
+else if (str5 == "/")
+{
+    Console.WriteLine("Результат: ");
+    Console.Write(db1 / db2);
+}
+
+else
+{
+    Console.WriteLine("Ошибка. Введите один из данных символов: +, -, *, /");
+}
